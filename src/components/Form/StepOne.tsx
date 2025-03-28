@@ -10,11 +10,16 @@ const StepOne = ({ control, errors }: any) => (
         name="fullName"
         control={control}
         render={({ field }) => (
-          <input
-            {...field}
-            className="w-full p-3 border border-gray-300 rounded-md"
-            placeholder="Enter your full name"
-          />
+          <div>
+            <input
+              {...field}
+              className={`w-full p-3 border rounded-md ${errors.fullName ? 'border-red-500' : 'border-gray-300'}`}
+              placeholder="Enter your full name"
+            />
+            {errors.fullName && (
+              <p className="text-red-500 text-sm mt-1">{errors.fullName.message}</p>
+            )}
+          </div>
         )}
       />
     </div>
@@ -25,11 +30,16 @@ const StepOne = ({ control, errors }: any) => (
         name="email"
         control={control}
         render={({ field }) => (
-          <input
-            {...field}
-            className="w-full p-3 border border-gray-300 rounded-md"
-            placeholder="Enter your email"
-          />
+          <div>
+            <input
+              {...field}
+              className={`w-full p-3 border rounded-md ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+              placeholder="Enter your email"
+            />
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+            )}
+          </div>
         )}
       />
     </div>
@@ -40,11 +50,16 @@ const StepOne = ({ control, errors }: any) => (
         name="phone"
         control={control}
         render={({ field }) => (
-          <input
-            {...field}
-            className="w-full p-3 border border-gray-300 rounded-md"
-            placeholder="Enter your phone number"
-          />
+          <div>
+            <input
+              {...field}
+              className={`w-full p-3 border rounded-md ${errors.phone ? 'border-red-500' : 'border-gray-300'}`}
+              placeholder="Enter your phone number"
+            />
+            {errors.phone && (
+              <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
+            )}
+          </div>
         )}
       />
     </div>
