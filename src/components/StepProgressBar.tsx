@@ -2,17 +2,17 @@ import { useTheme } from "next-themes";
 
 const StepProgressBar = ({ step }: { step: number }) => {
     const { theme } = useTheme();
-    const steps = ["Personal", "Account", "Message", "Confirm"];
+    const steps = ["Personal Information", "Address Details", "Account Setup", "Summary"];
 
     return (
-        <div className="mx-auto w-full p-4 mb-20">
+        <div className="mx-auto md:min-w-3xl p-4 mb-20">
             <div className="flex items-center">
                 {steps.map((label, index) => (
                     <div key={index} className="flex items-center w-full relative">
                         <div
                             className={`rounded-full transition duration-500 ease-in-out h-12 w-12 flex items-center justify-center border-2 ${step >= index + 1
-                                    ? "bg-teal-600 text-white border-teal-600"
-                                    : "border-gray-300 text-gray-500"
+                                ? "bg-teal-600 text-white border-teal-600"
+                                : "border-gray-300 text-gray-500"
                                 }`}
                         >
                             {index + 1}

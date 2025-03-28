@@ -17,7 +17,7 @@ export default function Navbar() {
                     <div className="flex space-x-4">
                         <div>
                             <Link href="/" className={`flex items-center py-5 px-2 ${theme === "dark" ? "text-white" : "text-gray-700"} hover:text-gray-900`}>
-                                <span className="text-2xl font-bold text-teal-500">Multi Form</span>
+                                <span className="text-2xl font-bold text-teal-500">Multi-Step Form</span>
                             </Link>
                         </div>
                     </div>
