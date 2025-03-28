@@ -1,4 +1,3 @@
-// Define interfaces for form data
 interface StepOneData {
     fullName: string;
     email: string;
@@ -17,6 +16,5 @@ interface StepOneData {
     confirmPassword: string;
   }
   
-  // Combined form data interface
   export type MultiStepFormData = StepOneData & StepTwoData & StepThreeData;
   
