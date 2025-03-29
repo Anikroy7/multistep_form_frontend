@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Multi-Step Form with Validation
 
-## Getting Started
+This project implements a multi-step form using **Next.js** (App Router), **React Hook Form**, **Zod** for validation, and **TailwindCSS** for styling. The form collects personal information, address details, and account setup information, with validation on each step.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Multi-step form with 3 steps: 
+  1. Personal Information
+  2. Address Details
+  3. Account Setup
+- Form Validation using **Zod**
+- Display error messages under each field if validation fails
+- Navigation through steps using "Next" and "Previous" buttons
+- Final step shows a summary of entered data
+- Data is stored in the local state using **useState** (or **useReducer**)
+- Console logs the submitted data
+- **Optional**: Simulated API submission using **React Query** or **RTK Query**
+- Dark mode support using **TailwindCSS**
+- Mobile responsive design
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js** (App Router)
+- **React Hook Form** for form handling
+- **Zod** for form validation
+- **TailwindCSS** for styling
+- **React Query** or **RTK Query** (optional for API simulation)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+Ensure you have the following installed:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Node.js** (version >= 14)
+- **npm** (or **yarn**)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Steps to Set Up
 
-## Deploy on Vercel
+1. Clone the repository to your local machine:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone <repository-url>
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Navigate to the project directory:
+
+    ```bash
+    cd <project-directory>
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+    Or if you're using yarn:
+
+    ```bash
+    yarn install
+    ```
+
+4. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+    Or if you're using yarn:
+
+    ```bash
+    yarn dev
+    ```
+
+5. Open your browser and visit `http://localhost:3000` to see the app in action.
+
+## Usage
+
+- **Step 1: Personal Information**  
+  Fill in your full name, email, and phone number. Validation will ensure the email format is correct and the phone number is at least 10 digits.
+
+- **Step 2: Address Details**  
+  Enter your street address, city, and zip code. The zip code must contain only numbers and be at least 5 digits long.
+
+- **Step 3: Account Setup**  
+  Create a username and password. The password must be at least 6 characters, and the confirmation password must match the original password.
+
+- **Final Step**:  
+  Review the data entered in all steps, and if correct, submit the form. The data will be logged to the console.
+
+## Bonus Features (Optional)
+
+- **React Query/RTK Query**: Simulate an API submission of the form data.
+- **Dark Mode**: The app supports dark mode styling using **TailwindCSS**.
+- **Responsive Design**: The form layout is responsive and optimized for mobile users.
+
+## Contributing
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/feature-name`).
+3. Commit your changes (`git commit -am 'Add feature'`).
+4. Push to the branch (`git push origin feature/feature-name`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Demo (Optional)
+
+[Link to demo video (if any)](https://example.com)
+
+## Acknowledgements
+
+- **Next.js** - Framework for React
+- **React Hook Form** - Simplifies form handling
+- **Zod** - Type-safe validation
+- **TailwindCSS** - Utility-first CSS framework

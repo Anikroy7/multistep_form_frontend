@@ -1,7 +1,6 @@
 import { useTheme } from "next-themes";
 
 const StepProgressBar = ({ step }: { step: number }) => {
-    const { theme } = useTheme();
     const steps = ["Personal Information", "Address Details", "Account Setup", "Summary"];
 
     return (
