@@ -13,8 +13,7 @@ This project implements a multi-step form using **Next.js** (App Router), **Reac
 - Navigation through steps using "Next" and "Previous" buttons
 - Final step shows a summary of entered data
 - Data is stored in the local state using **useState** (or **useReducer**)
-- Console logs the submitted data
-- **Optional**: Simulated API submission using **React Query** or **RTK Query**
+- Console logs the submitted data7
 - Dark mode support using **TailwindCSS**
 - Mobile responsive design
 
@@ -33,20 +32,20 @@ This project implements a multi-step form using **Next.js** (App Router), **Reac
 Ensure you have the following installed:
 
 - **Node.js** (version >= 14)
-- **npm** (or **yarn**)
+- **npm**
 
 ### Steps to Set Up
 
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Anikroy7/multistep_form_frontend
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd <project-directory>
+    cd multistep_form_frontend
     ```
 
 3. Install the dependencies:
@@ -54,24 +53,12 @@ Ensure you have the following installed:
     ```bash
     npm install
     ```
-
-    Or if you're using yarn:
-
-    ```bash
-    yarn install
-    ```
-
 4. Start the development server:
 
     ```bash
     npm run dev
     ```
 
-    Or if you're using yarn:
-
-    ```bash
-    yarn dev
-    ```
 
 5. Open your browser and visit `http://localhost:3000` to see the app in action.
 
@@ -89,12 +76,6 @@ Ensure you have the following installed:
 - **Final Step**:  
   Review the data entered in all steps, and if correct, submit the form. The data will be logged to the console.
 
-## Bonus Features (Optional)
-
-- **React Query/RTK Query**: Simulate an API submission of the form data.
-- **Dark Mode**: The app supports dark mode styling using **TailwindCSS**.
-- **Responsive Design**: The form layout is responsive and optimized for mobile users.
-
 ## Contributing
 
 1. Fork the repository.
@@ -103,13 +84,6 @@ Ensure you have the following installed:
 4. Push to the branch (`git push origin feature/feature-name`).
 5. Create a new Pull Request.
 
-## License
-
-This project is licensed under the MIT License.
-
-## Demo (Optional)
-
-[Link to demo video (if any)](https://example.com)
 
 ## Acknowledgements
 
